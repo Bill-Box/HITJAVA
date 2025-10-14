@@ -17,7 +17,7 @@ public class Main {
             int d = n % 3600;
             int e = d / 60;
             System.out.println("" + c + " tieng va " + e + " phut va " + d + "giay");
-            System.out.println("ok");
+            System.out.println("okk");
         }
     }
 }
