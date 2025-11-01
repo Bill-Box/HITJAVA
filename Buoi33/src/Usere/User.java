@@ -1,7 +1,6 @@
 package Usere;
 import java.util.UUID;
 
-import java.util.UUID;
 
 public class User {
     private String id;
@@ -19,7 +18,7 @@ public class User {
         this.phoneNumber = phoneNumber;
 
     }
-    private User[] uss = new User[5];
+
 
     public String getUsername() {
         return username;
@@ -56,8 +55,8 @@ public class User {
     public String getId() {
         return id;
     }
-    public User[] getUss(){
-        return uss;
+    public String getUss(){
+        return this.id;
     }
 
 
