@@ -12,7 +12,6 @@ public class AuthService {
     public void login(){
         System.out.print("Username: ");
         String username = sc.nextLine();
-
         System.out.print("Password: ");
         String password = sc.nextLine();
 
