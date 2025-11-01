@@ -13,7 +13,7 @@ public class UserService {
         us1.add(new User("Lương", "456", "luong@gmail.com", "0987654321"));
     }
 
-    public UserService(ArrayList<User> us1) {
+    public void UserService(ArrayList<User> us1) {
         this.us1 = us1;
     }
 
@@ -24,9 +24,6 @@ public class UserService {
         us1.add(user);
     }
 
-    public ArrayList<User> getUs1() {
-        return us1;
-    }
 
     // lấy người dùng theo id
     public  User getUserById(String userId){
