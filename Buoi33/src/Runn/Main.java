@@ -8,7 +8,6 @@ import service.UserService;
 
 public class Main {
     public static void main(String[] args) {
-        UserService usv = new UserService();
         AuthService auth = new AuthService();
         Scanner sc = new Scanner(System.in);
         System.out.println("\n--- MENU CHÍNH ---");
@@ -26,7 +25,7 @@ public class Main {
                 auth.login();
                 break;
             case 0:
-                System.out.println("Tạm biệt!");
+                System.out.println("Thoát");
                 break;
             default:
                 System.out.println("Lựa chọn không hợp lệ!");

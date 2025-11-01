@@ -25,43 +25,6 @@ public class AuthService {
         }
 
     }
-    private void showMenu(User loggedUser) {
-        int choice;
-        do {
-            System.out.println("\n--- Menu User ---");
-            System.out.println("1. Get user by id");
-            System.out.println("2. Get all user");
-            System.out.println("3. Change password");
-            System.out.println("0. Thoát");
-            System.out.print("Chọn: ");
-            choice = Integer.parseInt(sc.nextLine());
-
-            switch (choice) {
-                case 1:
-                    System.out.print("Nhập id người dùng: ");
-                    String id = sc.nextLine();
-                    User u = usrs.getUserById(id);
-                    if (u != null) System.out.println(u);
-                    else System.out.println("Không tìm thấy user!");
-                    break;
-
-                case 2:
-                    usrs.getAllUsers();
-                    break;
-
-                case 3:
-                    changePassword(loggedUser);
-                    break;
-
-                case 0:
-                    System.out.println("Đã thoát menu.");
-                    break;
-
-                default:
-                    System.out.println("Lựa chọn không hợp lệ!");
-            }
-        } while (choice != 0);
-    }
 
     public User checkLogin(String username, String password) {
         for (User u : usrs.getAllUsers()) {
@@ -103,6 +66,43 @@ public class AuthService {
         String newPass = sc.nextLine();
         user.setPassword(newPass);
         System.out.println("Đổi mật khẩu thành công!");
+    }
+    private void showMenu(User loggedUser) {
+        int choice;
+        do {
+            System.out.println("\n--- Menu User ---");
+            System.out.println("1. Get user by id");
+            System.out.println("2. Get all user");
+            System.out.println("3. Change password");
+            System.out.println("0. Thoát");
+            System.out.print("Chọn: ");
+            choice = Integer.parseInt(sc.nextLine());
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Nhập id người dùng: ");
+                    String id = sc.nextLine();
+                    User u = usrs.getUserById(id);
+                    if (u != null) System.out.println(u);
+                    else System.out.println("Không tìm thấy user!");
+                    break;
+
+                case 2:
+                    usrs.getAllUsers();
+                    break;
+
+                case 3:
+                    changePassword(loggedUser);
+                    break;
+
+                case 0:
+                    System.out.println("Đã thoát menu.");
+                    break;
+
+                default:
+                    System.out.println("Lựa chọn không hợp lệ!");
+            }
+        } while (choice != 0);
     }
     public String getAllUser(){
         return super.toString();
