@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f115aab2-5c13-4a8c-b3a5-25c7320e6228" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BTVN4/src/Parccell/Parcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BTVN4/src/Parccell/Parcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/Buoi33.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/out/production/Buoi33/Runn/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/out/production/Buoi33/Usere/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/out/production/Buoi33/service/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/out/production/Buoi33/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/src/Runn/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/src/Usere/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/src/service/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi33/src/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Buoi4/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/Buoi4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/out/production/Buoi4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/out/production/Buoi4/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/out/production/Buoi4/service/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/out/production/Buoi4/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Buoi4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/src/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/src/service/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Buoi4/src/service/UserService.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="350k1O9103qa4dNNDkXGkuxvyEL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f115aab2-5c13-4a8c-b3a5-25c7320e6228" name="Changes" comment="" />
+      <created>1762254161253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762254161253</updated>
+    </task>
+    <servers />
+  </component>
+</project>
