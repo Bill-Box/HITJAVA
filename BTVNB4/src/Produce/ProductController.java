@@ -65,14 +65,15 @@ public class ProductController extends Produces  {
         id = null;
     }
     public void getById(int id){
+        boolean fout = false;
         for(int i = 0; i < pr.size(); i++){
             if(pr.get(i).getId() == id) {
                 pr.get(i).getInfo();
+                fout = true;
                 break;
             }
-            else System.out.println(cs.W_OutPut);
 
-        }
+        }if(!fout) System.out.println(cs.W_OutPut);
 
     }
     public  void getAllProduces() {
