@@ -1,9 +1,8 @@
 package Produce;
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class Produces {
-    private String id;
+    private int id;
     private String name;
     private String description;
     private double price;
@@ -12,15 +11,19 @@ public class Produces {
         super();
     }
 
-    public Produces( String name, String description, double price) {
-        this.id =UUID.randomUUID().toString();
+    public Produces(int id, String name, String description, double price) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
     }
 
-    public String getId() {
-        return id;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return this.id;
     }
     public String getName() {
         return name;
@@ -46,12 +49,12 @@ public class Produces {
         this.price = price;
     }
     public void getInfo(){
-        System.out.println("Produces{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                '}' );
+        System.out.println("Produces " +
+                "ID = " + id + " " +
+                ", name= " + name + " " +
+                ", description= " + description +" " +
+                ", price= " + price
+                 );
     }
 
 

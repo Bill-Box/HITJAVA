@@ -9,15 +9,14 @@ public class ProductController extends Produces  {
     public ArrayList<Produces> pr;
     public ProductController(){
         pr = new ArrayList<>();
-        pr.add(new Produces("Asus", "To", 17.000));
-        pr.add(new Produces("Samsung", "Nho", 13.000));
+        pr.add(new Laptop(1, "Asus", "Laptop OLED", 17000, "16GB", "i5"));
+        pr.add(new SmartPhone(2, "Samsung", "Galaxy S23", 13000, true));
     }
-
     public void add(Produces produces){
         pr.add(produces);
     }
+    public static  ConStain cs = new ConStain();
     public void add(){
-        ConStain cs = new ConStain();
         Scanner sc = new Scanner(System.in);
         System.out.println("Them san pham:\n" +
                 "Chon 1 de them laptop. \n" +
@@ -28,6 +27,8 @@ public class ProductController extends Produces  {
         switch (type) {
             case 1: {
                 System.out.println("Moi thong tin laptop:");
+                System.out.print("ID: ");
+                int id = sc.nextInt();
                 System.out.print("Name: ");
                 String name = sc.nextLine();
                 System.out.print("Decription: ");
@@ -38,11 +39,13 @@ public class ProductController extends Produces  {
                 String ram = sc.nextLine();
                 System.out.print("CPU: ");
                 String cpu = sc.nextLine();
-                pr.add(new Laptop(name, decription, price, ram, cpu));
+                pr.add(new Laptop(id,name, decription, price, ram, cpu));
                 break;
             }
             case 2 :{
                 System.out.println("Moi nhap thong tin SmartPhone!");
+                System.out.print("ID: ");
+                int id = sc.nextInt();
                 System.out.print("Name: ");
                 String name = sc.nextLine();
                 System.out.print("Decription: ");
@@ -51,7 +54,7 @@ public class ProductController extends Produces  {
                 double price = sc.nextDouble();
                 System.out.print("5G SmatrPhone: ");
                 boolean has5G = sc.nextBoolean();
-                pr.add(new SmartPhone(name, decription, price, has5G));
+                pr.add(new SmartPhone(id,name, decription, price, has5G));
                 break;
             }
             default:
@@ -61,12 +64,16 @@ public class ProductController extends Produces  {
     public void remove(String  id){
         id = null;
     }
-    public Produces getById(String id){
+    public void getById(int id){
         for(int i = 0; i < pr.size(); i++){
-            if(pr.get(i).getId().equals(id));
-            return pr.get(i);
+            if(pr.get(i).getId() == id) {
+                pr.get(i).getInfo();
+                break;
+            }
+            else System.out.println(cs.W_OutPut);
+
         }
-        return null;
+
     }
     public  void getAllProduces() {
         for(int i = 0; i < pr.size(); i++){

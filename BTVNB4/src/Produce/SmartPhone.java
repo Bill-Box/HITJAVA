@@ -9,8 +9,8 @@ public class SmartPhone extends Produces{
         this.has5G = has5G;
     }
 
-    public SmartPhone(String name, String description, double price, boolean has5G) {
-        super(name, description, price);
+    public SmartPhone(int id,String name, String description, double price, boolean has5G) {
+        super(id,name, description, price);
         this.has5G = has5G;
     }
 
@@ -25,5 +25,6 @@ public class SmartPhone extends Produces{
     @Override
     public void getInfo() {
         super.getInfo();
+        System.out.println("5G: " + this.has5G);
     }
 }

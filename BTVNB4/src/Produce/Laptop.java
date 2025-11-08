@@ -11,14 +11,14 @@ public class Laptop extends  Produces {
         this.cpu = cpu;
     }
 
-    public Laptop(String name, String description, double price, String ram, String cpu) {
-        super(name, description, price);
+    public Laptop(int id,String name, String description, double price, String ram, String cpu) {
+        super(id, name, description, price);
         this.ram = ram;
         this.cpu = cpu;
     }
 
-    public Laptop(String name, String description, double price) {
-        super(name, description, price);
+    public Laptop(int id, String name, String description, double price) {
+        super(id, name, description, price);
 
     }
 
@@ -41,5 +41,7 @@ public class Laptop extends  Produces {
     @Override
     public void getInfo() {
         super.getInfo();
+        System.out.println(" Ram: " + this.ram + " CPU: " + this.cpu);
     }
+
 }

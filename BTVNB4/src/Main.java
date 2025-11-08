@@ -2,9 +2,8 @@ import Produce.ProductController;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         ProductController prd = new ProductController();
-        prd.add();
-        prd.getAllProduces();
+        prd.getById(1);
+
     }
 }
