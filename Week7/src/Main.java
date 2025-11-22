@@ -8,9 +8,9 @@ public class Main {
             System.out.println(b.getBookInfo());
             Library lib = new Library(10, 10);
             lib.addBook(b);
-            System.out.println(lib.getLibraryInfo());
             LibraryCard card = new LibraryCard("LC001", "Nguyễn An", 12, 5);
             lib.addLibraryCard(card);
+            System.out.println(lib.getLibraryInfo());
             System.out.println(card.toString());
     }
 }
