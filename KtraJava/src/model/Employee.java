@@ -7,12 +7,17 @@ package model;
     private double basicSalary;
     private Device device;
 
-     public Employee(String id) {
+
+     public Employee(String id, String name, int age, double basicSalary, Device device) {
          this.id = id;
          this.name = name;
          this.age = age;
          this.basicSalary = basicSalary;
          this.device = device;
+     }
+
+     public double getBase_Selery_Rate() {
+         return Base_Selery_Rate;
      }
 
      public String getId() {

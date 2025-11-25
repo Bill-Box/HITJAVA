@@ -1,7 +1,9 @@
 package IEmployeeService.mpl;
 
 import constaint.Constaint;
+import model.Developer;
 import model.Employee;
+import model.Tester;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +23,12 @@ public class EmployeeServiceempl implements IEmployeeService {
     public Scanner sc = new Scanner(System.in);
     public EmployeeServiceempl(){
         em = new ArrayList<>();
-        em.add("01","Hoang",18,2000,("001","A1"));
-        em.add("02","Hieu",18,3000,("002","A2"));
-        em.add("03","Trung",19,4000,("003","A3"));
-        em.add("04","Hoa",18,5000,("004","A4"));
-        em.add("05","Nam",19,6000,("005","A5"));
+
+        em.add(new Developer("01","Hoang",18,2000,("001","A1")));
+        em.add(new Tester("02","Hieu",18,3000,("002","A2")));
+        em.add(new Developer("03","Trung",19,4000,("003","A3")));
+        em.add(new Tester("04","Hoa",18,5000,("004","A4")));
+        em.add(new Developer("05","Nam",19,6000,("005","A5")));
     }
     @Override
     public List<Employee> getAllEmployess() {
