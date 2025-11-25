@@ -3,8 +3,10 @@ package model;
 public class Developer extends Employee implements IDebuggable,IWorkable {
     private int overtimeHours;
 
-    public Developer(String id) {
-        super(id);
+
+    public Developer(String id, String name, int age, double basicSalary, Device device, int overtimeHours) {
+        super(id, name, age, basicSalary, device);
+        this.overtimeHours = overtimeHours;
     }
 
     @Override

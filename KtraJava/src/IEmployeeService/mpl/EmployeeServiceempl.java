@@ -2,6 +2,7 @@ package IEmployeeService.mpl;
 
 import constaint.Constaint;
 import model.Developer;
+import model.Device;
 import model.Employee;
 import model.Tester;
 
@@ -24,11 +25,11 @@ public class EmployeeServiceempl implements IEmployeeService {
     public EmployeeServiceempl(){
         em = new ArrayList<>();
 
-        em.add(new Developer("01","Hoang",18,2000,("001","A1")));
-        em.add(new Tester("02","Hieu",18,3000,("002","A2")));
-        em.add(new Developer("03","Trung",19,4000,("003","A3")));
-        em.add(new Tester("04","Hoa",18,5000,("004","A4")));
-        em.add(new Developer("05","Nam",19,6000,("005","A5")));
+        em.add(new Developer("01","Hoang",18,2000,new Device("001","A1"),12));
+        em.add(new Tester("02","Hieu",18,3000,new Device("002","A2"),23));
+        em.add(new Developer("03","Trung",19,4000,new Device("003","A3"),12));
+        em.add(new Tester("04","Hoa",18,5000,new Device("004","A4"),14));
+        em.add(new Developer("05","Nam",19,6000,new Device("005","A5"),16));
     }
     @Override
     public List<Employee> getAllEmployess() {
