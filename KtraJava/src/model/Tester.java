@@ -7,6 +7,7 @@ public class Tester extends Employee implements IWorkable  {
         super(id, name, age, basicSalary, device);
         this.bugsDetectedCount = bugsDetectedCount;
     }
+    
 
     public int getBugsDetectedCount() {
         return bugsDetectedCount;
