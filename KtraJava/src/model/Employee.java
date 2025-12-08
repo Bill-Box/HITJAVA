@@ -70,13 +70,12 @@ package model;
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", basicSalary=" + basicSalary +
-                ", device=" + device +
-                '}';
+                ", device=" + device  + "\n";
     }
      public abstract int EmployeeCount();
 

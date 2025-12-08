@@ -2,13 +2,13 @@ package model;
 
 import IEmployeeService.mpl.EmployeeServiceempl;
 
-public class Device extends Employee  {
+public class Device  {
     private String model;
+    private String id;
 
-    public Device(String id, String name, int age, double basicSalary, Device device, String model, EmployeeServiceempl en) {
-        super(id, name, age, basicSalary, device);
+    public Device(String model, String id) {
         this.model = model;
-        this.en = en;
+        this.id = id;
     }
 
     public String getModel() {
@@ -19,18 +19,11 @@ public class Device extends Employee  {
         this.model = model;
     }
 
-    public EmployeeServiceempl getEn() {
-        return en;
-    }
-
-    public void setEn(EmployeeServiceempl en) {
-        this.en = en;
-    }
-
-    public EmployeeServiceempl en = new EmployeeServiceempl();
-
     @Override
-    public int EmployeeCount() {
-        return en.getAllEmployess().size();
+    public String toString() {
+        return
+                "model='" + model + '\'' +
+                ", id='" + id + '\''
+                ;
     }
 }
